@@ -40,7 +40,7 @@ public class UserController {
             //登录成功
             subject.login(token);
             //跳转到success.html
-            return "redirect:success";
+            return "success";
         } catch (UnknownAccountException e) {
             //登录失败: 用户名不存在
             model.addAttribute("msg","用户名不存在");
